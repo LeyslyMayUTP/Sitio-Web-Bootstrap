@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de Bootstrap</title>
+    <!-- Agregue el CSS de Bootstrap -->
+    <link href="CSS/bootstrap.min.css" rel="stylesheet">
+    <link href="CSS/MyFile.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Agregue mi CONTAINER -->
+    <div class="container">
+        <div class="container text-center">
+            <!-- Agregue una fila para mi barra de navegación -->
+            <div class="row">
+                <!-- Agregue un componente NAVBAR (1 componente) Barra de Navegación-->
+                    <nav class="navbar navbar-expand-lg bg-light">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Navegador</a>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Politicas
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Reglamento de la veterinaria</a></li>
+                                  <li><a class="dropdown-item" href="#">Consultas</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Encargados</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled">Contactos</a>
+                              </li>
+                            </ul>
+                            <form class="d-flex" role="search">
+                              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                              <button class="btn btn-outline-success" type="submit">Buscar</button>
+                            </form>
+                          </div>
+                        </div>
+                      </nav>
+                      <!-- Agregue un componente Badge (2 componente) Insignia o placa-->
+                <button type="button" class="btn btn-primary position-relative">
+                    Bienvenido, actualmente se encuentra navegando en nuestra pagina
+                    <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                      <span class="visually-hidden">New alerts</span>
+                    </span>
+                  </button>
+                  <div class="row">
+                    <h1>Veterinaria "Huellitas Felices"</h1>
+                  </div>
+            </div>
+            <!-- Agregue un GRID -->
+            <div class="row">
+              <div class="col">
+                <!-- Agregue un componente CARD (3 componente) Tarjeta-->
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/Img1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Alimentos</h5>
+                      <p class="card-text">En este apartado encontrara una gran variedad de alimentos para su mascota</p>
+                      <a href="Alimentos.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <!-- Agregue un componente CARD -->
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/Img2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Asesorios</h5>
+                      <p class="card-text">En este apartado encontrara una gran variedad de asesorios para consertir a su mascota</p>
+                      <a href="Asesorios.html" class="btn btn-primary">Más Información</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                 <!-- Agregue un componente CARD -->
+                <div class="card" style="width: 18rem;">
+                    <img src="IMG/Img3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Medicamentos</h5>
+                      <p class="card-text">Aquí conocera más acerca de los diferentes tipos de medicamentos que tenemos para su mascota</p>
+                      <a href="#" class="btn btn-primary">Más Información</a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    <!-- Agregue el JS de Bootstrap -->
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
